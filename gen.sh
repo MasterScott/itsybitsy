@@ -21,9 +21,11 @@ do
   if [ $BASE = "tmp" ]; then
 	BASE="default"
   fi
-
+  TITLE=$(head -n 1 $f)
+  echo $TITLE
   perl Markdown.pl --html4tags $f > ${f%.*}.stage.html;
   cp ./templates/$BASE.html ${f%.*}.tmp.html
-  sed -e "/\%body/r ${f%.*}.stage.html" -e "/$str/d" ${f%.*}.tmp.html > ${f%.*}.html
-  rm ${f%.*}.stage.html ${f%.*}.tmp.html $f
+  sed -e "/\%body/r ${f%.*}.stage.html" -e "/$str/d" ${f%.*}.tmp.html > ${f%.*}.title.html
+  sed "s/\%title/$TITLE/g" ${f%.*}.title.html > ${f%.*}.html 
+  rm ${f%.*}.stage.html ${f%.*}.title.html ${f%.*}.tmp.html $f
 done
