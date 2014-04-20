@@ -29,3 +29,5 @@ do
   sed "s/\%title/$TITLE/g" ${f%.*}.title.html > ${f%.*}.html 
   rm ${f%.*}.stage.html ${f%.*}.title.html ${f%.*}.tmp.html $f
 done
+
+mv ./tmp ./_site
