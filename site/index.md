@@ -1,20 +1,22 @@
 
 <p style="text-align:center"><img src="./images/itsybitsy.logo.png"/></p>
 
+itst bitsy is a teenie tiny static site generator. 
+
 Motivation
 ===========
 
 itsy bitsy was created one evening, when, I had failed to install a haskell-based
 static site generator onto my tiny notebook. There was simply not enough ram to complete the installation through cabal.
 
-I went back to my virtual machine, sitting on a much more powerful computing, and attempted to reinstall the generator there. Unfortuantly I was greeted with dependency error after dependency error.
-
-Itsy Bitsy is designed to be minimal, it as one major dependency (Markdown.pl) which it is distributed with.
+All I really needed was a way to convert some markdown files to html and apply
+simple html templates. It turns out you can do all of that in a couple lines of
+bash (and a perl script to convert the markdown...)
 
 Using
 =====
 
-Simply fork or download this project, and run 
+Simply [fork][https://github.com/j-mie/itsybitsy] and run...
 
 	./gen.sh
 
