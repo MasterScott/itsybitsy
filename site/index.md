@@ -16,7 +16,7 @@ bash (and a perl script to convert the markdown...)
 Using
 =====
 
-Simply [fork](https://github.com/j-mie/itsybitsy) and run...
+Simply [fork](https://github.com/s-rah/itsybitsy) and run...
 
 	./gen.sh
 
