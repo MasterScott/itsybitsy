@@ -27,6 +27,7 @@ Features
 
 * Markdown to HTML conversion
 * Some variable replacement.
+* Templating (configurable on a per-directory basis).
 
 That's it, as I said it is minimal. It is really all I need/want from a static site generator and I hope you find it useful.
 
