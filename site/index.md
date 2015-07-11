@@ -1,7 +1,7 @@
 
 <p style="text-align:center"><img src="./images/itsybitsy.logo.png"/></p>
 
-itst bitsy is a teenie tiny static site generator. 
+**itsy bitsy** is a teenie tiny static site generator. 
 
 Motivation
 ===========
